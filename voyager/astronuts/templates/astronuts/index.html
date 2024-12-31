@@ -1,0 +1,9 @@
+{% if astronuts %}
+    <ul>
+    {% for astronut in astronuts %}
+        <li>{{ astronut.name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Astronuts</p>
+{% endif %}
